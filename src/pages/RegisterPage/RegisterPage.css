@@ -1,0 +1,88 @@
+.register-container {
+  background-image: url("../../images/ancient.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(255, 255, 255, 0.09);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  backdrop-filter: blur(10px); 
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.register-form h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: var(--primary);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.register-form .user-field {
+  position: relative;
+}
+.register-form .user-field input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--primary);
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  outline: none;
+  background: transparent;
+}
+.register-form .user-field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: var(--primary);
+  pointer-events: none;
+  transition: 0.5s;
+
+}
+
+.register-form .user-field input:focus ~ label,
+.register-form .user-field input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+.register-form p {
+  margin-bottom: 10px;
+}
+
+.register-form button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.register-form button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}

@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+  /* padding: 5px; */
+  /* margin: auto; */
+}
+
+.navbar-logo img {
+  width: 120px;
+  height: 120px;
+  margin-left: 3pc;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+ 
+.navbar-links li a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--secondary);
+}
+
+.navbar-auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 3pc;
+}
+
+.navbar-auth-buttons a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  /* border: 1px solid var(--secondary); */
+  border-radius: 4px;
+}
+
+.navbar-auth-buttons a:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+  border: none;
+}
+.navbar-auth-button-register{
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.navbar-auth-button-login{
+    color: var(--secondary);
+  border: 1px solid var(--secondary);
+
+}

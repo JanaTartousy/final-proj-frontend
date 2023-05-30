@@ -1,0 +1,32 @@
+.contact-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../../images/luxury.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .contact-hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  
+  .contact-hero-container h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  }
+  

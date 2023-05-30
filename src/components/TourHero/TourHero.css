@@ -1,0 +1,26 @@
+.tour-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87.5vh;
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .tour-hero-container video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tour-hero-container h1 {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--primary);
+    left: 6%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  }
+  
