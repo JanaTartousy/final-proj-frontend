@@ -52,7 +52,7 @@ function RegisterPage() {
   };
 
   return (
-    <div class="register-container">
+     <div class="register-container" style={{background:"../../images/ancient.webp"}}>
       <form class="register-form" onSubmit={handleSubmit}>
         <h2>Register</h2>
         {error && <p className="error-message">{error}</p>}

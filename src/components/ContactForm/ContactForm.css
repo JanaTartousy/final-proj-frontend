@@ -94,7 +94,6 @@
    background-color: var(--shadows);
   }
 
-  /* Responsive Styling */
   @media (max-width: 768px) {
     .contact-form-container {
       width: 80%;

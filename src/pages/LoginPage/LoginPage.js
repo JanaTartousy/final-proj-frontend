@@ -15,16 +15,22 @@ function LoginPage() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_URL}/admin/login`, {
-        username,
-        password
-      });
+      const response = await axios.post(
+        `${process.env.REACT_APP_URL}/admin/login`,
+        {
+          username,
+          password,
+        }
+      );
 
       // Handle the successful login response
       console.log(response.data); // You can customize this based on your API response
 
       // Check the user's role and redirect accordingly
-      if (response.data.role === "admin" || response.data.role === "superAdmin") {
+      if (
+        response.data.role === "admin" ||
+        response.data.role === "superAdmin"
+      ) {
         navigate("/dashboard"); // Redirect to the dashboard using navigate
       } else {
         navigate("/home"); // Redirect to the home page using navigate
@@ -42,7 +48,10 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-container">
+    <div
+      className="login-container"
+      style={{ background: "../../images/ancient.webp" }}
+    >
       <div className="login-box">
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
