@@ -30,13 +30,13 @@ function PostSection() {
         </div>
         <div className="post-images">
           <div className="post-img-box">
-            <img src={postImg} alt="Image 1" />
+            <img src={postImg} alt="" />
           </div>
           <div className="post-img-box">
-            <img src={postImg} alt="Image 2" />
+            <img src={postImg} alt="" />
           </div>
           <div className="post-img-box">
-            <img src={postImg} alt="Image 3" />
+            <img src={postImg} alt="" />
           </div>
         </div>
       </div>

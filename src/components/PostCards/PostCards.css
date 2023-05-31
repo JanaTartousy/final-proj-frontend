@@ -10,8 +10,8 @@
 }
 
 .post-card-box {
-  width: 230px;
-  height: 400px;
+  width: calc(20% - 1pc); 
+  height: 500px;
   margin-left: 20px;
   margin-bottom: 40px;
   overflow: hidden;

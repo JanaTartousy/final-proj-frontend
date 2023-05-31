@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import LogoutIcon from "@mui/icons-material/Logout";
+// import LogoutIcon from "@mui/icons-material/Logout";
 import { motion } from "framer-motion";
 import { SidebarData } from "./data";
 import { Navigate, NavLink } from "react-router-dom";
@@ -29,11 +29,11 @@ const Sidebar = ({ userData }) => {
     },
   };
 
-//   const handelSignOut =()=>{
-//     const cookies = new Cookies;
-//     cookies.remove('admin-token');
-//     navigate('/');
-//   }
+  // const handelSignOut =()=>{
+  //   const cookies = new Cookies;
+  //   cookies.remove('admin-token');
+  //   navigate('/');
+  // }
  
 
   return (
@@ -53,7 +53,7 @@ const Sidebar = ({ userData }) => {
           animate={window.innerWidth <= 800 ? `${expanded}` : ""}
         >
           <div className="sidebar-logo">
-            <img src={logo} width="100%" height="100%" />
+            <img src={logo} width="100%" height="100%" alt=""/>
           </div>
         
           <div className="side-comp__menu">
