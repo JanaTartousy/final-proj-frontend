@@ -134,12 +134,7 @@
   .side_content {
     color: var(--primary);
   } 
-  :root {
-    --primary: #fff;
-    --secondary: #005275;
-    --accent: #80cdcc;
-    --activeItem: #005275;
-  }
+
   
   .side-comp {
     height: 98vh;
