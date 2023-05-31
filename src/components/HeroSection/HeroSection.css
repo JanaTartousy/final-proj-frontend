@@ -1,6 +1,6 @@
 .hero-carousel {
   position: relative;
-  transition: transform 0.5s ease-in-out; /* Add transition */
+  transition: transform 0.5s ease-in-out; 
 }
 .hero .slick-list {
   overflow: hidden;
