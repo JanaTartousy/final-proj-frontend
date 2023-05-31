@@ -2,29 +2,22 @@
 
 body {
   margin: 0;
-  font-family: 'Arial';
+  font-family: "Arial";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 :root {
-	--primary: #ffffff;
-	--secondary: #06610c;
-	--accent: #9B9109;
-	--black: #000000;
-  --shadows: #AAAA33;
+  --primary: #ffffff;
+  --secondary: #06610c;
+  --accent: #9b9109;
+  --black: #000000;
+  --shadows: #aaaa33;
   --grey: #555;
   --subtitle-font-name: "Island Moments", cursive;
 }
-
-/* @font-face {
-	font-family: 'Liberation Serif';
-	src: url('/src/fonts/arial-narrow/Arial Narrow.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-} */
