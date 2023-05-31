@@ -5,7 +5,7 @@
     height: 70vh;
     overflow: hidden;
     position: relative;
-    background-image: url("../../images/luxury.jpeg");
+    background-image: url(../../images/luxury.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
