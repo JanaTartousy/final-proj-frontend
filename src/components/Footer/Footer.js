@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-container">
+    <div className="footer-content">
       <div className="logo">
         <Link to="/" className="logo">
           <img src={Logo} alt="Dalili-logo" />
@@ -22,14 +23,11 @@ function Footer() {
 
       <div className="contact-wrapper">
         <h2 className="info-title">Contact Info</h2>
-        <ul>
-          <li>
-            <FaWhatsapp className="contact-icon" /> +961 764 852 71
-          </li>
-          <li>
-            <MdEmail className="contact-icon" /> tartousyjana@gmail.com
-          </li>
-        </ul>
+          <div><FaWhatsapp className="contact-icon " /> +961 764 852 71</div>
+          <div><MdEmail className="contact-icon" /> tartousyjana@gmail.com</div>
+            
+          
+            
       </div>
       <div className="footer-pages">
         <div className="links-container">
@@ -81,7 +79,9 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="footer-text">
+
+    </div> 
+         <div className="footer-text">
         <p>&copy; 2023 Created by Jana Tartousy</p>
       </div>
     </div>

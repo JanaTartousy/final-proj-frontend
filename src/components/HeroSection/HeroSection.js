@@ -25,7 +25,7 @@ export default function Hero() {
   };
 
   return (
-    <div>
+    <div className="carousel-container">
       <section className="hero">
         <Slider {...sliderSettings} className="hero-carousel">
           <div>
@@ -56,10 +56,9 @@ export default function Hero() {
             ></div>
           </div>
         </Slider>
-       <div className="hero-content">
+       {/* <div className="hero-content"> */}
         <h1>Travel with the Experts Today!</h1>
-
-       </div>
+       {/* </div> */}
       </section>
     </div>
   );

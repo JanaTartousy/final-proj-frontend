@@ -315,3 +315,24 @@ body {
 .view-more-button:hover {
   background-color: var(--accent);
 }
+
+@media (max-width: 992px) {
+  .card-area {
+    display: block;
+    padding: 0%;
+  }
+  .view-more-button {
+    margin-top: 256px;
+  }
+  .main {
+    height: 188vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-section {
+    height: 30%;
+  }
+  
+}

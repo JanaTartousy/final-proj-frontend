@@ -59,3 +59,40 @@
   border: 1px solid var(--secondary);
 
 }
+
+@media(max-width : 992px){
+  .navbar-links {
+    display: none;
+  }
+  .navbar-logo img{
+    margin-left: 10px;
+   margin-top: 17px;
+  }
+  .navbar-auth-buttons {
+    display: flex;
+    gap: 6px;
+    margin-right: 1pc;
+  }
+  
+  .navbar-auth-buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 4px;
+  }
+  
+  .navbar-auth-buttons a:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+    border: none;
+  }
+  .navbar-auth-button-register{
+      background-color: var(--secondary);
+      color: var(--primary);
+  }
+  .navbar-auth-button-login{
+      color: var(--secondary);
+    border: 1px solid var(--secondary);
+  
+  }
+}

@@ -5,6 +5,10 @@
 .hero .slick-list {
   overflow: hidden;
 }
+/* .carousel-container{
+  width: 100%;
+  border: 2px solid red;
+} */
 
 .hero .slick-slide {
   position: relative;
@@ -24,8 +28,11 @@
   background-repeat: no-repeat;
   position: relative;
 }
+.hero {
+  position: relative;
+}
 
-.hero .hero-content {
+/* .hero .hero-content {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -40,6 +47,14 @@
   font-size: 3.5pc;
   text-align: left;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+} */
+.hero h1 {
+  color: var(--primary);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  font-size: 6pc;
 }
 
 .hero .hero-slide:before {
@@ -50,4 +65,15 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width : 992px) {
+  .hero-content{
+    border: 2px solid red;
+    top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 4pc;
+  }
 }

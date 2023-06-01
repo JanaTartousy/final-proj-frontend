@@ -23,4 +23,11 @@
     color: var(--grey);
     margin-bottom: 20px;
   }
+
+  @media(max-width : 992px) {
+    .about-dalili {
+      padding: 50px 15px 15px;
+
+    }
+  }
   

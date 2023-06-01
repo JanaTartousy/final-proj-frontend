@@ -28,7 +28,6 @@
     border-radius: 50px !important;
     padding: 0.4rem 1.5rem !important;
     font-family: "Island Moments", cursive;
-  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,3 +95,41 @@
   transform: scale(1.1);
 }
   
+
+@media(max-width : 992px){
+   .post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
+   .post-section{
+    padding: 50px 15px 15px;
+   }
+   .post-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 30px;
+    width: 100%;
+   }
+   
+   .post-img-box {
+    margin-left: 0px;
+   }
+   .post-content {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0px;
+   }
+   
+   .post-img-box {
+    width: 80%;
+   }  
+   .post-img-box:not(:first-child) {
+margin-top: 0;
+   }
+ 
+}

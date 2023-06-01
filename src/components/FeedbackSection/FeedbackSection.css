@@ -87,3 +87,8 @@
   color: var(--black);
   margin-bottom: 5px;
 }
+@media (max-width: 992px) {
+  .feedback-section{
+    margin-top: 4pc;
+  }
+}
