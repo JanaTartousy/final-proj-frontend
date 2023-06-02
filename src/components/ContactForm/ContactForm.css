@@ -94,9 +94,33 @@
    background-color: var(--shadows);
   }
 
-  @media (max-width: 768px) {
+  @media(max-width : 992px){
     .contact-form-container {
       width: 80%;
     }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+   
+    .container{
+      gap: 0;
+
+    }
+    .contact-form-container{
+      text-align: center
+      ;
+    }
+    .contact-form-container label{
+      text-align: left;
+    }
+    .contact-form-wrapper{
+      display: flex;
+      justify-content: center;
+    }
+    .contacct-info-wrapper {
+      display: flex;
+      justify-content: center;
+    }    
   }
   

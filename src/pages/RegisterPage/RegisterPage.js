@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./RegisterPage.css";
+import { useNavigate } from "react-router-dom";
 
 function RegisterPage() {
   const [username, setUsername] = useState("");
@@ -10,6 +11,7 @@ function RegisterPage() {
   const [password, setPassword] = useState("");
   const [image, setImage] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -19,6 +21,7 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    
     try {
       const formData = new FormData();
       formData.append("username", username);
@@ -34,7 +37,7 @@ function RegisterPage() {
       );
 
       // Handle the successful registration response
-      console.log(response.data); // You can customize this based on your API response
+      console.log(response); // You can customize this based on your API response
 
       // Clear the form
       setUsername("");
@@ -44,6 +47,7 @@ function RegisterPage() {
       setPassword("");
       setImage("");
       setError("");
+      navigate("/login");
     } catch (error) {
       // Handle the error response
       console.log(error.response.data); // You can customize this based on your API response
@@ -92,7 +96,7 @@ function RegisterPage() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
+            
           />
           <label for="email">Email</label>
         </div>
@@ -110,7 +114,7 @@ function RegisterPage() {
           <input type="file" id="image" onChange={handleImageChange} />
           <label for="image">Image</label>
         </div>
-        <button type="submit">
+        <button type="submit ">
           <span></span>
           <span></span>
           <span></span>
