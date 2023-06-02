@@ -1,34 +1,67 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../../images/dalili.png';
-import './Nav.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Nav.css";
+import "remixicon/fonts/remixicon.css";
+import Logo from "../../images/dalili.png";
 
-const Navbar = () => {
+function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <img src={Logo} alt="Dalili Logo" />
-      </div>
-      <ul className="navbar-links">
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/tours">Tours</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/profile">Profile</Link>
-        </li>
-      </ul>
-      <div className="navbar-auth-buttons">
+    <div className="nav-container">
+      <nav>
+        <div className="logoparent">
+          <img className="logo-nav" src={Logo} alt="Logo" />
+        </div>
+
+        <div
+          className={`hamburger ${menuOpen ? "toggle" : ""}`}
+          onClick={toggleMenu}
+        >
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
+        </div>
+
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <li>
+            <Link className="a" to="/" onClick={closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="a" to="/tours" onClick={closeMenu}>
+              Tours
+            </Link>
+          </li>
+          <li>
+            <a href="/contact" className="a" onClick={closeMenu}>
+              Contact
+            </a>
+          </li>
+          <li>
+            <Link className="a" to="/profile" onClick={closeMenu}>
+              Profile
+            </Link>
+          </li>
+        
+         
+          <div className="navbar-auth-buttons">
         <Link to="/login" className="navbar-auth-button-login">Login</Link>
         <Link to="/register" className="navbar-auth-button-register">Register</Link>
       </div>
-    </nav>
+        </ul>
+      </nav>
+    </div>
   );
-};
+}
 
-export default Navbar;
+export default Nav;

@@ -30,6 +30,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "reactstrap": "^9.1.10",
+    "remixicon": "^1.0.1",
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.7.5",
     "universal-cookie": "^4.0.4",

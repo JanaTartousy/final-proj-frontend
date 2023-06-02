@@ -143,7 +143,9 @@ ul {
   text-decoration: none;
   color: var(--primary);
 }
-
+.small-link:hover{
+  color: var(--accent);
+}
 .icons-container {
   display: flex;
   justify-content: space-between;

@@ -8,7 +8,7 @@
 }
 
 .tour-card {
-  width: calc(20% - 1pc); 
+  width: calc(20% - 1pc);
   background-color: var(--primary);
   box-shadow: 0 0 10px var(--shadows);
   border-radius: 8px;
@@ -51,4 +51,19 @@
 
 .tour-card-button:hover {
   background-color: var(--accent);
+}
+@media (max-width: 992px) {
+  .tour-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  .tour-card {
+    width: 90%;
+    background-color: var(--primary);
+    box-shadow: 0 0 10px var(--shadows);
+    border-radius: 8px;
+    overflow: hidden;
+  }
 }
