@@ -1,25 +1,135 @@
-.tour-details{
-    display: flex;
-    max-width: 90%;
-    margin: auto;
-    gap: 50px;
-    
+.tour-details {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3pc;
+  gap: 50px;
 }
+
 .tour-details-wrapper h2 {
-    text-align: center;
-    font-size: 2rem;
-   margin-bottom: 3pc;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3pc;
 }
-.detailed-img{
-    width: 800px;
-    height: 600px;
+
+.detailed-img {
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.tour-info {
+  font-size: 20px;
+  color: var(--grey);
+  line-height: 1.6;
+}
+
+.tour-info span {
+  color: var(--black);
+}
+
+.book-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: var(--accent);
+}
+
+.popup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-form-content {
+  width: 700px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-form h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.popup-form form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-form label {
+  display: grid;
+  gap: 5px;
+  text-align: start; 
+}
+
+.popup-form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+}
+
+.popup-form button[type="submit"],
+.popup-form .popup-close {
+  margin-top: 1pc;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 100px;
+  background-color: var(--accent);
+  color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-form button[type="submit"]:hover,
+.popup-form .popup-close:hover {
+  background-color: var(--shadows);
+  color: var(--primary);
+}
+
+.popup-close {
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+@media (max-width: 992px){
+ .tour-details{
+ display: block;
+ padding: 50px 15px 15px;
+ }
+ .detailed-img {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin: 0 auto;
 }
 .tour-info{
-   font-size: 20px;
-   color: var(--grey);
-   line-height: 1.6;
-   
+  margin-top: 1pc;
 }
-.tour-info span{
-    color: var(--black);
+.popup-form-content{
+  width: 340px;
+  height: 532px;
+}
 }

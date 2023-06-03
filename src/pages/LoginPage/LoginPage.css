@@ -191,3 +191,37 @@
   color: var(--accent);
   border-radius: 5px;
 }
+
+@media (max-width: 992px) {
+  .login-box {
+    padding: 20px;
+    width: 337px;
+    height: 400px;
+  }
+
+  .login-box h2 {
+    font-size: 1.5rem;
+    margin-top: 1pc;
+  }
+
+  .login-box .user-box input {
+    font-size: 17px;
+   margin-top: 1pc;
+  }
+
+  .login-box .user-box label {
+    font-size: 17px;
+   
+  }
+
+  .login-box form button {
+    font-size: 17px;
+   margin-bottom: 1pc;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+  }
+
+  .login-box p:last-child {
+    font-size: 17px;
+  }
+}
