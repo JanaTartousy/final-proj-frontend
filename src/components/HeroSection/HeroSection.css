@@ -36,7 +36,8 @@
   position: absolute;
   top: 20%;
   left: 7%;
-  font-size: 6pc;
+  font-size: 5pc;
+  max-width: 872px;
 }
 
 .hero .hero-slide:before {

@@ -10,8 +10,6 @@ function TourCards() {
     try {
       const response = await axios.get(`${process.env.REACT_APP_URL}/tour`);
       setTours(response.data.docs);
-      // setTours(data)
-      // console.log(tours);
     } catch (error) {
       console.error("Error fetching tours:", error);
     }
