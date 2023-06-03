@@ -10,7 +10,7 @@ function PostCards() {
       try {
         const response = await axios.get(`${process.env.REACT_APP_URL}/post`);
         setPosts(response.data.docs);
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         console.error('Error fetching posts:', error);
       }
@@ -25,7 +25,8 @@ function PostCards() {
         {posts.map((post) => (
           <div className='post-card-box' key={post._id}>
             <img src={post.image} alt={post.title} />
-            <h3></h3>
+            <h3>{post.title}</h3>
+            <p>{post.description}</p>
           </div>
         ))}
       </div>
