@@ -1,14 +1,14 @@
 .post-page-hero-container h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--black);
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
-    margin-bottom: 2pc;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--black);
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.9);
+  margin-bottom: 2pc;
+}
+@media (max-width: 992px) {
+  .post-page-hero-container h1 {
+    font-size: 1.5rem;
+    margin-top: 7pc;
   }
-  @media (max-width: 992px){
-    .post-page-hero-container h1{
-      font-size: 1.5rem;
-      margin-top: 7pc;
-    }
-  }
+}

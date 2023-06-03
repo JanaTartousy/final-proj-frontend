@@ -31,7 +31,7 @@ function Nav() {
           <div className="line3"></div>
         </div>
 
-        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li>
             <Link className="a" to="/" onClick={closeMenu}>
               Home
@@ -52,13 +52,16 @@ function Nav() {
               Profile
             </Link>
           </li>
-        
-         
+
           <div className="navbar-auth-buttons">
-        <Link to="/login" className="navbar-auth-button-login">Login</Link>
-        <Link to="/register" className="navbar-auth-button-register">Register</Link>
-      </div>
-        </ul>
+            <Link to="/login" className="navbar-auth-button-login">
+              Login
+            </Link>
+            <Link to="/register" className="navbar-auth-button-register">
+              Register
+            </Link>
+          </div>
+        </div>
       </nav>
     </div>
   );

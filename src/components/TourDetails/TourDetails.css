@@ -80,7 +80,7 @@
 .popup-form label {
   display: grid;
   gap: 5px;
-  text-align: start; 
+  text-align: start;
 }
 
 .popup-form input {
@@ -114,22 +114,22 @@
   top: 10px;
   right: 20px;
 }
-@media (max-width: 992px){
- .tour-details{
- display: block;
- padding: 50px 15px 15px;
- }
- .detailed-img {
-  width: 100%;
-  max-width: 350px;
-  height: 350px;
-  margin: 0 auto;
-}
-.tour-info{
-  margin-top: 1pc;
-}
-.popup-form-content{
-  width: 340px;
-  height: 532px;
-}
+@media (max-width: 992px) {
+  .tour-details {
+    display: block;
+    padding: 50px 15px 15px;
+  }
+  .detailed-img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+  .tour-info {
+    margin-top: 1pc;
+  }
+  .popup-form-content {
+    width: 340px;
+    height: 532px;
+  }
 }

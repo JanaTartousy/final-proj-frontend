@@ -10,7 +10,7 @@
 }
 
 .post-card-box {
-  width: calc(20% - 1pc); 
+  width: calc(20% - 1pc);
   height: 500px;
   margin-left: 20px;
   margin-bottom: 40px;
@@ -42,7 +42,7 @@
   line-height: 1.6;
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .post-card-img {
     margin-top: 0;
     display: flex;

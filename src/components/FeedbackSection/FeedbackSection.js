@@ -29,8 +29,7 @@ function FeedbackSection() {
           <div className="feedback-content">
             <p className="feedback-text">
               "The team at Natours is simply exceptional. They went above and
-              beyond. Can't wait to book
-              another adventure with them!"
+              beyond. Can't wait to book another adventure with them!"
             </p>
             <div className="feedback-info">
               <img
@@ -48,7 +47,8 @@ function FeedbackSection() {
           <div className="feedback-content">
             <p className="feedback-text">
               "I've been on multiple tours with Natours, and each one has been
-              fantastic. The level of service, attention to detail, Highly recommended!"
+              fantastic. The level of service, attention to detail, Highly
+              recommended!"
             </p>
             <div className="feedback-info">
               <img

@@ -21,7 +21,6 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    
     try {
       const formData = new FormData();
       formData.append("username", username);
@@ -36,10 +35,8 @@ function RegisterPage() {
         formData
       );
 
-      // Handle the successful registration response
-      console.log(response); // You can customize this based on your API response
+      console.log(response);
 
-      // Clear the form
       setUsername("");
       setFirstName("");
       setLastName("");
@@ -49,14 +46,13 @@ function RegisterPage() {
       setError("");
       navigate("/login");
     } catch (error) {
-      // Handle the error response
-      console.log(error.response.data); // You can customize this based on your API response
+      console.log(error.response.data);
       setError(error.response.data.message || "Registration failed");
     }
   };
 
   return (
-     <div class="register-container">
+    <div class="register-container">
       <form class="register-form" onSubmit={handleSubmit}>
         <h2>Register</h2>
         {error && <p className="error-message">{error}</p>}
@@ -96,7 +92,6 @@ function RegisterPage() {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            
           />
           <label for="email">Email</label>
         </div>

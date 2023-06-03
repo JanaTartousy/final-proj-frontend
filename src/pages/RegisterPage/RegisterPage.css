@@ -1,5 +1,5 @@
 .register-container {
- background-image: url("../../images/ancient.webp");
+  background-image: url("../../images/ancient.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -86,19 +86,19 @@
   color: var(--primary);
 }
 @media (max-width: 992px) {
-  .register-form{
+  .register-form {
     padding: 20px;
     width: 337px;
     height: 600px;
   }
-  .register-form h2{
+  .register-form h2 {
     font-size: 1.5rem;
     margin-top: 1pc;
   }
-  .register-form .user-field input{
+  .register-form .user-field input {
     font-size: 17px;
   }
-  .register-form .user-field label{
+  .register-form .user-field label {
     font-size: 17px;
   }
 }

@@ -7,8 +7,8 @@ function AboutSection() {
       <div className="dalili-content">
         <h2 className="about-us-title">Discover the Beauty of Lebanon</h2>
         <p className="about-us-paragraph">
-          Welcome to DALILI, your premier tourist guide in Lebanon.
-          We are passionate about showcasing the rich heritage, breathtaking
+          Welcome to DALILI, your premier tourist guide in Lebanon. We are
+          passionate about showcasing the rich heritage, breathtaking
           landscapes, and warm hospitality that this enchanting country has to
           offer.
         </p>
@@ -21,10 +21,10 @@ function AboutSection() {
           authentic experience.
         </p>
         <p className="about-us-paragraph">
-          At DALILI, we prioritize your comfort and satisfaction.
-          Our dedicated team is committed to delivering personalized service and
-          insider knowledge, ensuring that every moment of your visit is
-          tailored to your preferences.
+          At DALILI, we prioritize your comfort and satisfaction. Our dedicated
+          team is committed to delivering personalized service and insider
+          knowledge, ensuring that every moment of your visit is tailored to
+          your preferences.
         </p>
         <p className="about-us-paragraph">
           Join us as we unveil the hidden treasures of Lebanon, immersing you in

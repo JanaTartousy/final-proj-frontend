@@ -19,13 +19,11 @@
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 600;
   margin-bottom: 40px;
   color: var(--primary);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  font-size: 36px;
-  font-weight: 600;
 }
 
 .feedback-container {
@@ -65,6 +63,7 @@
 .feedback-info {
   display: flex;
   align-items: center;
+  justify-content: center; /* Add this line to center the content horizontally */
   margin-top: auto;
 }
 
@@ -82,13 +81,14 @@
 }
 
 .feedback-author {
-  font-size: 18px;
+  font-size: 1.7rem; /* Change the font size to 1.7rem */
   font-weight: 600;
   color: var(--black);
   margin-bottom: 5px;
 }
+
 @media (max-width: 992px) {
-  .feedback-section{
+  .feedback-section {
     margin-top: 4pc;
   }
 }

@@ -9,7 +9,7 @@ function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const navigate = useNavigate(); // Updated hook
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,26 +23,21 @@ function LoginPage() {
         }
       );
 
-      // Handle the successful login response
-      console.log(response.data); // You can customize this based on your API response
-
-      // Check the user's role and redirect accordingly
+      console.log(response.data);
       if (
         response.data.role === "admin" ||
         response.data.role === "superAdmin"
       ) {
-        navigate("/dashboard"); // Redirect to the dashboard using navigate
+        navigate("/dashboard");
       } else {
-        navigate("/home"); // Redirect to the home page using navigate
+        navigate("/home");
       }
 
-      // Clear the form
       setUsername("");
       setPassword("");
       setError("");
     } catch (error) {
-      // Handle the error response
-      console.log(error.response.data); // You can customize this based on your API response
+      console.log(error.response.data);
       setError(error.response.data.message || "Login failed");
     }
   };

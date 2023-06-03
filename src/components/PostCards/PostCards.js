@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import './PostCards.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./PostCards.css";
 
 function PostCards() {
   const [posts, setPosts] = useState([]);
@@ -10,20 +10,19 @@ function PostCards() {
       try {
         const response = await axios.get(`${process.env.REACT_APP_URL}/post`);
         setPosts(response.data.docs);
-        // console.log(response.data);
       } catch (error) {
-        console.error('Error fetching posts:', error);
+        console.error("Error fetching posts:", error);
       }
     };
 
     fetchPosts();
   }, []);
-  
+
   return (
-    <div className='post-card-wrapper'>
-      <div className='post-card-img'>
+    <div className="post-card-wrapper">
+      <div className="post-card-img">
         {posts.map((post) => (
-          <div className='post-card-box' key={post._id}>
+          <div className="post-card-box" key={post._id}>
             <img src={post.image} alt={post.title} />
             <h3>{post.title}</h3>
             <p>{post.description}</p>
