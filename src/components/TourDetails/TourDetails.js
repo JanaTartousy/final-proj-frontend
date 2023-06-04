@@ -56,7 +56,7 @@ function TourDetails() {
   };
 
   if (!tour) {
-    return <p className="loading-message">Loading tour details...</p>;
+    return <p className="loading">Loading...</p>;
   }
 
   return (
