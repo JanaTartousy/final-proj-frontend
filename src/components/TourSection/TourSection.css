@@ -318,6 +318,7 @@ body {
 
 @media (max-width: 992px) {
   .card-area {
+    position: sticky;
     display: block;
     padding: 0%;
   }
