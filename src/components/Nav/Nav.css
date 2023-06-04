@@ -1,7 +1,7 @@
 nav {
   height: 12.5vh;
   background-color: var(--primary);
-  position: relative;
+  position: sticky;
   display: flex;
   justify-content: space-around;
   z-index: 1;
