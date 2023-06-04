@@ -15,6 +15,7 @@ import DashTour from "./pages/DashTour/DashTour";
 import DashPost from "./pages/DashPost/DashPost";
 import DashFeedback from "./pages/DashFeedback/DashFeedback";
 import AdminRoute from "./pages/AdminRoute/AdminRoute";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
@@ -36,6 +37,8 @@ const App = () => {
         <Route path="/tour-details/:id" element={<TourDetails />} />
         <Route path="/posts" element={<PostPage />} />
         <Route path="/adminroute" element={<AdminRoute />}></Route>
+         {/* Catch-all route for 404 page */}
+         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

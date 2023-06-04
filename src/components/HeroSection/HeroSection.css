@@ -35,7 +35,7 @@
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 20%;
-  left: 7%;
+  left: 3pc;
   font-size: 5pc;
   max-width: 872px;
 }
@@ -56,6 +56,8 @@
   }
 
   .hero h1 {
-    font-size: 4pc;
+    font-size: 3pc;
+    margin-left: 0.5pc;
+    margin-right: 0.5pc;
   }
 }

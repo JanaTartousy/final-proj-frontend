@@ -50,7 +50,7 @@ function TourSection() {
                       </svg>
 
                       <h2 className="card-front__heading">City break</h2>
-                      <p className="card-front__text-price">From £29</p>
+                      <p className="card-front__text-price">From 5$</p>
                     </div>
 
                     <div className="card-front__bt">
@@ -81,7 +81,7 @@ function TourSection() {
                     no matter what time!
                   </p>
                   <Link
-                    to="/tour-details"
+                    // to="/tour-details"
                     className="inside-page__btn inside-page__btn--camping"
                   >
                     View details
@@ -137,7 +137,7 @@ function TourSection() {
                         </g>
                       </svg>
                       <h2 className="card-front__heading">Ski trip</h2>
-                      <p className="card-front__text-price">From £199</p>
+                      <p className="card-front__text-price">From 30$</p>
                     </div>
 
                     <div className="card-front__bt">
@@ -169,7 +169,7 @@ function TourSection() {
                     the slope?
                   </p>
                   <Link
-                    to="/tour-details"
+                    // to="/tour-details"
                     className="inside-page__btn inside-page__btn--camping"
                   >
                     View details
@@ -209,7 +209,7 @@ function TourSection() {
                       </svg>
 
                       <h2 className="card-front__heading">Beach time</h2>
-                      <p className="card-front__text-price">From £229</p>
+                      <p className="card-front__text-price">From 20$</p>
                     </div>
 
                     <div className="card-front__bt">
@@ -240,7 +240,7 @@ function TourSection() {
                     for an adventure!
                   </p>
                   <Link
-                    to="/tour-details"
+                    // to="/tour-details"
                     className="inside-page__btn inside-page__btn--camping"
                   >
                     View details
@@ -278,7 +278,7 @@ function TourSection() {
                         />
                       </svg>
                       <h2 className="card-front__heading">Camping trek</h2>
-                      <p className="card-front__text-price">From £129</p>
+                      <p className="card-front__text-price">From 25$</p>
                     </div>
 
                     <div className="card-front__bt">
@@ -309,7 +309,7 @@ function TourSection() {
                     beautiful scenery of nature!
                   </p>
                   <Link
-                    to="/tour-details"
+                    // to="/tour-details"
                     className="inside-page__btn inside-page__btn--camping"
                   >
                     View details

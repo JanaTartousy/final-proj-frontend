@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .not-found h1 {
+    font-size: 55px;
+    color: var(--secondary);
+  }
+  
+  .not-found p {
+    font-size: 27px;
+    color: var(--grey);
+    margin-bottom: 30px;
+  }
+  
+  .not-found a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .not-found a:hover {
+    text-decoration: underline;
+  }
+  
