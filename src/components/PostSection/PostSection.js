@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./PostSection.css";
 import postImg from "../../images/Baatara.jpg";
+import postImg1 from "../../images/baalbek.jpeg"
+import postImg2 from "../../images/crusader.webp"
 
 function PostSection() {
   return (
@@ -35,10 +37,10 @@ function PostSection() {
             <img src={postImg} alt="" />
           </div>
           <div className="post-img-box">
-            <img src={postImg} alt="" />
+            <img src={postImg2} alt="" />
           </div>
           <div className="post-img-box">
-            <img src={postImg} alt="" />
+            <img src={postImg1} alt="" />
           </div>
         </div>
       </div>
