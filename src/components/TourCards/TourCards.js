@@ -30,10 +30,14 @@ function TourCards() {
         tours.map((tour) => (
           <div className="tour-card" key={tour._id}>
             <img className="tour-card-image" src={tour.image} alt="Tour" />
+            {console.log(tour.image)}
             <div className="tour-card-content">
               <h2 className="tour-card-title">{tour.title}</h2>
               <p className="tour-card-description">{tour.description}</p>
-              <Link to={`/tour-details/${tour._id}`} className="tour-card-button">
+              <Link
+                to={`/tour-details/${tour._id}`}
+                className="tour-card-button"
+              >
                 Book Now
               </Link>
             </div>
