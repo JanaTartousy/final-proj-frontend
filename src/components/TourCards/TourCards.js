@@ -31,7 +31,7 @@ function TourCards() {
           <div className="tour-card" key={tour._id}>
             <img
               className="tour-card-image"
-              src={`https://dalili-app-backend.onrender.com/${tour.image}`}
+              src={`https://dalili-app-backend.onrender.com${tour.image}`}
               alt="Tour"
             />
             {console.log(tour.image)}
