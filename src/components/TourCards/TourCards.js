@@ -29,7 +29,11 @@ function TourCards() {
       ) : (
         tours.map((tour) => (
           <div className="tour-card" key={tour._id}>
-            <img className="tour-card-image" src={tour.image} alt="Tour" />
+            <img
+              className="tour-card-image"
+              src={`https://dalili-app-backend.onrender.com/${tour.image}`}
+              alt="Tour"
+            />
             {console.log(tour.image)}
             <div className="tour-card-content">
               <h2 className="tour-card-title">{tour.title}</h2>
