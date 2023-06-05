@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.5.0",
     "axios": "^1.4.0",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.16",
     "gsap": "^3.11.5",
     "js-cookie": "^3.0.5",
@@ -33,6 +34,7 @@
     "reactstrap": "^9.1.10",
     "remixicon": "^1.0.1",
     "slick-carousel": "^1.8.1",
+    "sweetalert": "^2.1.2",
     "sweetalert2": "^11.7.5",
     "universal-cookie": "^4.0.4",
     "web-vitals": "^2.1.4"

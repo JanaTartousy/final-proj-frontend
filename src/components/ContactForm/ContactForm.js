@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
-import { useState } from "react";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -14,22 +15,42 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the form data to the backend or perform any necessary actions here
-    console.log("Form submitted:", {
+    const reportData = {
       firstName,
       lastName,
       email,
       phoneNumber,
       message,
-    });
+    };
 
-    // Clear form fields after submission
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setPhoneNumber("");
-    setMessage("");
+    emailjs
+      .send(
+        "service_30vlew1",
+        "template_0dhie28",
+        reportData,
+        "zpSHvjTBMVSz2KXGr"
+      )
+      .then(
+        (response) => {
+          // Display success message
+          Swal.fire("Success!", "Your message has been sent.", "success");
+
+          // Clear form inputs
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setPhoneNumber("");
+          setMessage("");
+        },
+        (error) => {
+          // Display error message
+          Swal.fire("Error!", "Failed to send message.", "error");
+
+          console.log(error);
+        }
+      );
   };
+
   return (
     <div className="contact-wrap-container">
       <div className="container">

@@ -30,7 +30,7 @@ function LoginPage() {
       ) {
         navigate("/dashboard");
       } else {
-        navigate("/home");
+        navigate("/profile");
       }
 
       setUsername("");

@@ -42,11 +42,6 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.feedback-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  transform: translateY(-20px);
-}
-
 .feedback-content {
   display: flex;
   flex-direction: column;
@@ -63,7 +58,7 @@
 .feedback-info {
   display: flex;
   align-items: center;
-  justify-content: center; /* Add this line to center the content horizontally */
+  justify-content: center; 
   margin-top: auto;
 }
 
@@ -81,7 +76,7 @@
 }
 
 .feedback-author {
-  font-size: 1.7rem; /* Change the font size to 1.7rem */
+  font-size: 1.7rem; 
   font-weight: 600;
   color: var(--black);
   margin-bottom: 5px;
