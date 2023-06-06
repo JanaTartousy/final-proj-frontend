@@ -1,18 +1,27 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Nav.css";
 import "remixicon/fonts/remixicon.css";
 import Logo from "../../images/dalili.png";
+import { useAuthUser, useSignOut } from "react-auth-kit";
+import { Logout } from "@mui/icons-material";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
+  const userData = useAuthUser();
+  const signOut = useSignOut();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleLogout = () => {
+    signOut();
+    navigate("/login");
   };
 
   return (
@@ -47,20 +56,35 @@ function Nav() {
               Contact
             </a>
           </li>
-          <li>
-            <Link className="a" to="/profile" onClick={closeMenu}>
-              Profile
-            </Link>
-          </li>
-
-          <div className="navbar-auth-buttons">
-            <Link to="/login" className="navbar-auth-button-login">
-              Login
-            </Link>
-            <Link to="/register" className="navbar-auth-button-register">
-              Register
-            </Link>
-          </div>
+          {userData()?.role === "user" && (
+            <li>
+              <Link className="a" to="/profile" onClick={closeMenu}>
+                Profile
+              </Link>
+            </li>
+          )}
+          {userData()?.username ? (
+            <>
+              <a className="user">{userData().username}</a>
+              <Logout onClick={handleLogout} 
+              sx={{
+                fontSize:"25px",
+                color: "var(--secondary)",
+                "&:hover": {
+                 color: "var(--accent)"
+                },
+              }}/>
+            </>
+          ) : (
+            <div className="navbar-auth-buttons">
+              <Link to="/login" className="navbar-auth-button-login">
+                Login
+              </Link>
+              <Link to="/register" className="navbar-auth-button-register">
+                Register
+              </Link>
+            </div>
+          )}
         </div>
       </nav>
     </div>

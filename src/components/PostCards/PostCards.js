@@ -29,7 +29,10 @@ function PostCards() {
         <div className="post-card-img">
           {posts.map((post) => (
             <div className="post-card-box" key={post._id}>
-              <img src={post.image} alt={post.title} />
+              <img
+                src={`https://dalili-app-backend.onrender.com${post.image}`}
+                alt={post.title}
+              />
               <h3>{post.title}</h3>
               <p>{post.description}</p>
             </div>

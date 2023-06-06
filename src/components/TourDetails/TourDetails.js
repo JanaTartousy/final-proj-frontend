@@ -63,7 +63,11 @@ function TourDetails() {
     <div className="tour-details-wrapper">
       <h2>Tour Details</h2>
       <div className="tour-details">
-        <img className="detailed-img" src={tour.image} alt="Tour" />
+        <img
+          className="detailed-img"
+          src={`https://dalili-app-backend.onrender.com${tour.image}`}
+          alt="Tour"
+        />
         <div className="tour-info">
           <p>
             <strong>{tour.title}</strong>

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Updated import
-
+import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
+import { useSignIn } from "react-auth-kit";
 
 function LoginPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const signIn = useSignIn();
 
   const navigate = useNavigate();
 
@@ -22,7 +23,14 @@ function LoginPage() {
           password,
         }
       );
-
+      console.log(response.data);
+      localStorage.setItem("user-data", JSON.stringify(response.data.response));
+      signIn({
+        token: response.data.token,
+        expiresIn: "3000",
+        tokenType: "Bearer",
+        authState: response.data.response,
+      });
       console.log(response.data);
       if (
         response.data.role === "admin" ||

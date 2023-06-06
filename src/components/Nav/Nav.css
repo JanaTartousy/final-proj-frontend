@@ -18,11 +18,15 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 4.5rem;
   width: 88vw;
   padding: 0 0.7vw;
   align-items: center;
   justify-content: center;
+}
+.user{
+  font-size: 25px;
+  color: var(--accent);
 }
 .nav-links li a {
   text-decoration: none;
@@ -44,7 +48,7 @@ nav {
   width: 120px;
   height: 120px;
   margin-left: 3pc;
-  margin-right: 29pc;
+  /* margin-right: 31pc; */
 }
 
 .navbar-auth-buttons {
